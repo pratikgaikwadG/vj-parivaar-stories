@@ -1,15 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-interface SoftCTAProps {
-  title: string;
-  description: string;
-  linkText: string;
-  linkTo: string;
-  variant?: 'default' | 'accent' | 'muted';
-}
-
-const SoftCTA = ({ title, description, linkText, linkTo, variant = 'default' }: SoftCTAProps) => {
+const SoftCTA = ({ title, description, linkText, linkTo, variant = 'default' }) => {
   const variants = {
     default: 'bg-secondary',
     accent: 'bg-sage/10',

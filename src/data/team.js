@@ -1,14 +1,4 @@
-export interface TeamMember {
-  id: number;
-  name: string;
-  role: string;
-  tenure: string;
-  quote: string;
-  image: string;
-  category: 'leadership' | 'team' | 'homeowner' | 'partner';
-}
-
-export const teamMembers: TeamMember[] = [
+export const teamMembers = [
   {
     id: 1,
     name: "Vijay Javdekar",
