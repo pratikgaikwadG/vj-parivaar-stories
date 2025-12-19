@@ -1,4 +1,18 @@
-export const communities = [
+export interface Community {
+  id: number;
+  name: string;
+  location: string;
+  tagline: string;
+  description: string;
+  image: string;
+  features: string[];
+  residentQuote?: {
+    text: string;
+    author: string;
+  };
+}
+
+export const communities: Community[] = [
   {
     id: 1,
     name: "VJ Greenwood",

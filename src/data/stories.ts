@@ -1,4 +1,15 @@
-export const stories = [
+export interface Story {
+  id: number;
+  title: string;
+  excerpt: string;
+  author: string;
+  role: string;
+  image: string;
+  category: 'homeowner' | 'employee' | 'community';
+  date: string;
+}
+
+export const stories: Story[] = [
   {
     id: 1,
     title: "Finding Home in More Ways Than One",

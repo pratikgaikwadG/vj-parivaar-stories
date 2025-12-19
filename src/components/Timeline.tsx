@@ -1,4 +1,10 @@
-const Timeline = ({ events }) => {
+import type { TimelineEvent } from '@/data/timeline';
+
+interface TimelineProps {
+  events: TimelineEvent[];
+}
+
+const Timeline = ({ events }: TimelineProps) => {
   return (
     <div className="relative">
       {/* Vertical Line */}

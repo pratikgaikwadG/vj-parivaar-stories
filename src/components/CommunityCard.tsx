@@ -1,7 +1,13 @@
 import { ArrowRight, Quote } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import type { Community } from '@/data/communities';
 
-const CommunityCard = ({ community, featured = false }) => {
+interface CommunityCardProps {
+  community: Community;
+  featured?: boolean;
+}
+
+const CommunityCard = ({ community, featured = false }: CommunityCardProps) => {
   if (featured) {
     return (
       <article className="group grid md:grid-cols-2 gap-0 bg-card rounded-2xl overflow-hidden shadow-soft hover-lift">

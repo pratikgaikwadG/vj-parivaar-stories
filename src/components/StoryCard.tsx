@@ -1,7 +1,13 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import type { Story } from '@/data/stories';
 
-const StoryCard = ({ story, featured = false }) => {
+interface StoryCardProps {
+  story: Story;
+  featured?: boolean;
+}
+
+const StoryCard = ({ story, featured = false }: StoryCardProps) => {
   const categoryColors = {
     homeowner: 'bg-sage/10 text-sage',
     employee: 'bg-primary/10 text-primary',

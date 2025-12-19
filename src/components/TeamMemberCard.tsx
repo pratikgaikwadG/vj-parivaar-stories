@@ -1,6 +1,11 @@
+import type { TeamMember } from '@/data/team';
 import { Quote } from 'lucide-react';
 
-const TeamMemberCard = ({ member }) => {
+interface TeamMemberCardProps {
+  member: TeamMember;
+}
+
+const TeamMemberCard = ({ member }: TeamMemberCardProps) => {
   const categoryStyles = {
     leadership: 'ring-2 ring-primary/20',
     team: '',

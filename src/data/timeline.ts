@@ -1,4 +1,11 @@
-export const timeline = [
+export interface TimelineEvent {
+  year: string;
+  title: string;
+  description: string;
+  highlight?: boolean;
+}
+
+export const timeline: TimelineEvent[] = [
   {
     year: "1974",
     title: "A Dream Takes Root",
